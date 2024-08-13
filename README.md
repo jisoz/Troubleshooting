@@ -590,5 +590,33 @@ By understanding these key aspects, you can choose a power supply that matches y
 
 
 
+# cables 
+
+ribbon cables : connecting components  disk drive torage devices + connectors
+
+
+
+
+# OS
+An operating system (OS) is a computer software program that organises computer hardware and software resources and offers services for programs and users, acting as an intermediary between users accessing resources efficiently and safely through programs like this one. Here we discuss its key functions and components:
+
+
+1-resource allocation: Operating systems control computer resources such as CPU (Central Processing Unit), memory, storage devices and input/output devices to allocate them fairly and efficiently across processes or programs.
+
+2- process management:Operating systems oversee the execution of programs or processes by managing scheduling, synchronisation, and communication among them - this allows multiple processes to run concurrently on one computer system without interruptions from other processes or users.
+
+3- memory management: Operating systems allocate and oversee computer memory resources efficiently and protect them to ensure effective utilisation and prevent unauthorised access to memory resources. They handle allocation, deallocation and protection to maximise usage while protecting from unwarranted tampering with memory resources.
+
+
+4- file system services:Operating systems offer file system services that enable both users and programs to store, retrieve, organise, and back up their data onto various storage devices. They handle file access permissions, organisational structure and backup capabilities so as to maintain data integrity and ensure its protection.
+
+
+5-- device administrtion:Operating systems manage input/output devices such as keyboards, mice, printers and network interfaces with device drivers that facilitate communication between these devices and software programs.
+
+6-user interface: Operating systems provide users with an interface for connecting with computer systems. This may consist of command lines (CLI), graphic user interfaces (GUI) or both and include tools and applications for managing users, file administration and configuring systems.
+
+
+7- security: Operating systems provide various protection measures designed to keep computers free from unapproved access, malware and viruses as well as possible threats, including authentication mechanisms for users as well as access control policies and firewall security measures.
+
 
 

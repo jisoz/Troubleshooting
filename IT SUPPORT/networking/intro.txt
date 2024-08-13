@@ -1,0 +1,163 @@
+
+# Network concept
+The term 'network' refers to any collection of devices connected together via wiring such as servers, computers, printers and switches which allow communication among themselves as well as sharing of resources among themselves.
+
+
+nodes: Connected devices that facilitate data exchange among various devices like routers, computers, servers and switches are referred to as nodes in networks. Other nodes may include computers, routers, servers and switches which are capable of transmitting or receiving information as nodes as well.
+
+Local Area Networks (LAN) refers to any network which covers one space without connecting it, like an office, home or building; Wide Area Networks (WANs), on the other hand, cover larger geographic regions by connecting multiple LANs together through private or dedicated connections.
+
+Network or Topology refers to the physical or logical structure of networks such as busses, stars, meshes or hybrid topologies, with each offering different costs, scaling capabilities and failure tolerance profiles.
+
+
+Bandwidth is defined as the largest capacity for data transmission within any period in any network, generally measured as bits/second but can also take the form of Kbps megabits/second and gigabits (Gbps).
+
+
+Protocols provide guidelines and standards that facilitate communication among devices within networks, including TCP/IP HTTP FTP DNS, since these ensure consistent data transference between platforms or networks.
+
+
+IP addresses are numerical identifiers assigned to all devices on a network for communicating using the IP Protocol, typically consisting of 32 bits for IPv4 devices or 128-bit addresses presented as decimals with dots as their decimal format.
+
+
+
+# IP Addressing and Subnetting
+
+IP addressing and subnetting are core concepts in networking. Let's delve further into them here:
+IP (Internet Protocol) addresses are unique identifiers assigned to every device connected to a network and consist of two parts, network portion and host portion. IPv4 addresses utilise 32 bits written out using the dotted-decimal system, while IPv6 contains 128 bits using Hexadecimal notation instead (for instance, 192.168.0.1 expressed as Hexadecimal notation instead).
+IPv4 addresses can be divided into five classes from A through E. Of these categories, A through C serve for general network addressing purposes, while only multicast addresses should use class D addresses; class E addresses should only ever be utilised experimentally.
+Subnetting refers to the practice of partitioning networks into smaller subnetworks called subnets to better utilise IP addresses and manage network administration. Subnetting works by borrowing bits from host addresses in an IP address in order to form subnets.
+Subnet masks are 32-bit values designed to distinguish network and host portions of an IP address by applying one followed by zero bits systematically across it - each bit representing different sections that make up its whole.
+
+example: 
+IP addressing and subnetting are fundamental concepts in networking, enabling devices to communicate over a network efficiently. Here’s an overview of how they work, along with a real-life example.
+
+1. IP Addressing
+An IP address is a unique identifier for a device on a network. There are two types of IP addresses:
+
+IPv4: Uses a 32-bit address format, represented as four octets (e.g., 192.168.1.1).
+IPv6: Uses a 128-bit address format, represented as eight groups of four hexadecimal digits (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+IPv4 Address Format
+An IPv4 address is typically written in decimal format as four numbers separated by periods, like 192.168.1.1. Each number (octet) ranges from 0 to 255.
+
+2. Subnetting
+Subnetting divides a larger network into smaller, more manageable sub-networks (subnets). This improves network performance and security by reducing broadcast traffic and isolating network segments.
+
+Subnet Mask
+A subnet mask is used to determine which portion of an IP address is the network part and which part is the host part. For example, a common subnet mask is 255.255.255.0, which in binary is 11111111.11111111.11111111.00000000. This mask indicates that the first 24 bits of the IP address are the network portion, and the last 8 bits are for hosts.
+
+3. Real-Life Example
+Scenario: You have a small office with 50 devices, and you want to organize them into subnets to better manage the network.
+
+Step 1: Choose a Network Address
+Let’s say you have the network address 192.168.1.0/24. This means:
+
+Network Address: 192.168.1.0
+Subnet Mask: 255.255.255.0 (which is /24 in CIDR notation, indicating 24 bits for the network).
+This network can have:
+
+Total Addresses: 2^8 = 256 (but 2 are reserved for network and broadcast, so 254 usable addresses).
+Usable IP Range: 192.168.1.1 to 192.168.1.254.
+Step 2: Subnetting
+To create smaller subnets, you can change the subnet mask to divide the network further. Suppose you want to create 4 subnets.
+
+New Subnet Mask: 255.255.255.192 (or /26).
+This provides 64 addresses per subnet (2^6 = 64), with 62 usable IP addresses (since 2 addresses are reserved for network and broadcast).
+Step 3: Subnet Allocation
+Your network 192.168.1.0/24 is now divided into 4 subnets:
+
+Subnet 1: 192.168.1.0/26
+Range: 192.168.1.1 to 192.168.1.62
+Broadcast: 192.168.1.63
+Subnet 2: 192.168.1.64/26
+Range: 192.168.1.65 to 192.168.1.126
+Broadcast: 192.168.1.127
+Subnet 3: 192.168.1.128/26
+Range: 192.168.1.129 to 192.168.1.190
+Broadcast: 192.168.1.191
+Subnet 4: 192.168.1.192/26
+Range: 192.168.1.193 to 192.168.1.254
+Broadcast: 192.168.1.255
+Step 4: Assign IP Addresses
+Now, you can assign IP addresses to devices in each subnet:
+
+Subnet 1: Assign IPs to devices in the first floor.
+Subnet 2: Assign IPs to devices in the second floor.
+Subnet 3: Assign IPs to servers.
+Subnet 4: Reserve for future expansion.
+4. Benefits of Subnetting
+Efficient Use of IP Addresses: Avoids wasting IP addresses in large networks.
+Improved Security: Limits broadcast traffic to specific subnets, reducing the chance of network attacks spreading.
+Better Performance: Reduces congestion and improves speed by limiting the size of each broadcast domain.
+5. Real-Life Example Continued: Communication Between Subnets
+To allow communication between different subnets, you need a router or a Layer 3 switch that can route traffic between these subnets.
+
+For example, if a device in Subnet 1 (192.168.1.10) needs to communicate with a device in Subnet 3 (192.168.1.130), the traffic will be routed through the router, which knows how to reach each subnet.
+
+Conclusion
+IP addressing and subnetting are essential for organizing and managing networks efficiently. Subnetting allows you to break down a large network into smaller, manageable segments, improving performance and security. Understanding these concepts is crucial for designing and managing any network, whether for a small office or a large enterprise.
+
+
+
+# ntwork protocols
+
+Networking Protocols
+Networking Protocols serve as the rules and conventions governing how data transmits across networks. By understanding and mastering Networking Protocols, you gain the power to establish secure connections that maximise efficiency while troubleshooting network issues efficiently - from TCP/IP and Ethernet protocols through DNS, DHCP, and SNMP protocols; this course will give a thorough introduction to their principles, functions and implementation across an array of networks. Networking protocols are rules and standards used to communicate between devices on a network. Let's explore some key networking protocols:
+
+1-)TCP/IP is one of the foundational protocols on the internet, providing reliable connection-oriented transmission without errors and disruption. TCP guarantees error-free delivery while IP handles packet addressing and routing.
+2-) http  An internet-wide protocol designed for transmitting hypertext-like web pages over networks. It enables interaction between browsers and servers and users so they can interact directly with websites through these browsers and servers.
+3-) ftp FTP is an internet protocol for file transfer across devices connected to a network using standard commands for uploading, downloading, and managing remote servers.
+4-) DNS is a protocol designed to map human-friendly domain names like www.example.com directly into IP addresses that websites require, making website navigation simpler by eliminating individual IP address memory challenges and remembering processes for each individual website.
+5-) DHCP is a network protocol designed for automatically assigning IP addresses and configuring parameters between devices on a network. By making IP management simpler by automating configuration steps, DHCP makes network administration simpler
+6-) SNMP (Simple Network Management Protocol): SNMP is an open network monitoring and administration protocol used for network administration, providing administrators with tools for controlling devices, tracking performance data and receiving alerts about network events.
+
+
+# metwork troubleshooting techniques 
+
+Network troubleshooting refers to identifying and fixing network problems to ensure optimal performance and connectivity. Below are a few troubleshooting techniques commonly employed when troubleshooting is necessary:
+
+Technique 1 - Conduct an initial physical connection check
+
+Before making any other steps, inspect all physical connections, such as cables and connectors as well as network devices (routers/switches etc). Make sure they are firmly seated without damage and securely connected.
+
+
+Technique 2 - Check Power and Indicators:
+
+Verify whether all network devices have access to electricity and monitor status indicators to make sure everything is functioning as intended and there are no hardware problems with any devices on your network.
+
+Technique 3 - Restart Devices:
+
+Sometimes rebooting devices - such as routers, switches or modems - is all it takes to fix network connectivity problems temporarily. Power cycling the affected equipment could provide relief.
+
+Technique 4 - Ping and traceroute:
+
+Use the PING command to quickly test connectivity between devices, identify any latency or packet loss, as well as pinpoint possible network bottlenecks. Incorporate traceroute for further insight.
+
+
+Technique 5 - Check IP Configurations:
+
+Prior to initiating any network-connected device, verify its IP configuration settings on all participating devices by double-checking that each has the required IP address, subnet mask, default gateway address and DNS server settings.
+
+
+
+Technique 6 - Firewall and security settings:
+
+To assess whether any firewalls or security software may be contributing to connectivity problems, temporarily disabling them and seeing if that resolves them before making adjustments accordingly. If so, adjust them as appropriate before trying again with them enabled again.
+
+
+Technique 7 - Update firmware and drivers:
+
+Outdated firmware or drivers could lead to network issues, so check manufacturer websites regularly for updates and upgrades as necessary
+
+
+
+Technique 8 - Use network diagnostic tools:
+
+Tools like Wireshark or Netcat provide useful diagnostic insights into network communications by helping analyse network traffic and detect anomalies or errors that arise on it. They give an in-depth view into network activities.
+
+
+
+Technique 9 - Examine event logs:
+
+Monitor network devices or computers' event logs for any error messages or warnings that might provide clues as to the root of their network problem. They could offer invaluable insight.
+
+
