@@ -1,0 +1,69 @@
+#### IT security, 
+
+also referred to as cybersecurity or information security, involves safeguarding computer systems, networks and data against unauthorised access, use, disclosure, disruption, modification or destruction. Let's examine some key components of IT security:
+
+
+ 1-Confidentiality refers to safeguarding sensitive information so it only becomes available to authorised people or systems, including implementation of measures like access controls, encryption and secure communication channels to avoid unwarranted access or data leaks.
+ 2-Integrity is defined as the preservation and integrity of data from storage to transmission and is maintained with methods like validation checksums and digital signatures, ensuring its accurate storage, processing, transmission and detection of any unauthorised modifications that might compromise it.
+ 3-In terms of computer system availability, availability refers to making computer networks, data systems and applications easily available and usable when needed. IT security measures like redundancies, fault tolerance and disaster recovery plans help maintain continuous availability while minimising downtime.
+ 4-Authentication is used to establish and validate the identities of people or devices trying to access protected resources, typically using passwords, biometrics, two-factor authentication or similar techniques in order to ensure only authorised parties may gain entry to them.
+ 5-Authorization refers to granting access or permissions to authenticated users or systems, assigning user roles, access controls and privileges accordingly to ensure only authorised individuals gain access to resources they are allowed to utilise.
+
+
+
+###Security Threats and Vulnerabilities
+
+Security threats and vulnerabilities pose major threats to IT systems and data. However, let's discuss some commonly occurring types of security risks.
+
+
+Malware : Malicious software (malware) includes viruses, worms, Trojans, ransomware and spyware programs that infiltrate systems to steal confidential information or disrupt operations or give attackers unwarranted entry to networks and computers. Malware may infiltrate computers without permission to gain unauthorised entry by infected individuals as well as gain entry via third party programs without their knowledge or approval.
+
+Phishing:  is a tactic used by attackers to trick users into disclosing sensitive information like passwords or credit card details by impersonating legitimate entities, while social engineering involves manipulating people to gain unauthorised access or disclosure of confidential data.
+
+network attacks: Network attacks target network infrastructure or protocols with an intention of gaining unauthorised entry, disrupting communications or collecting data without user authorization. Such attempts include DoS/DDoS attacks as well as Man-in-the-Middle (MitM) and network sniffing attacks, among others.
+
+Password attacks involve any attempt by unauthorised individuals to gain unauthorised entry to user accounts through exploiting weak or stolen passwords, typically by employing brute force attacks, dictionary attacks and credential stuffing techniques.
+
+Software vulnerabilities refer to weaknesses or flaws within software systems or applications which could allow attackers to exploit them and cause unauthorised access, data breach or system compromise. Regular patching updates must take place to address known vulnerabilities.
+
+Insider threats arise when individuals within an organisation misuse their authorised access to data or systems for malicious intent, accidental data leakage or failure to follow security policies properly. These risks could include intentional maliciousness or negligence regarding security policies.
+
+
+
+
+
+#####security procedures:
+
+
+user account administration:Procedures for user account administration include steps for creating, editing and disabling user accounts as well as allocating access rights based on roles assigned
+patch manmagment ;Procedures for patch management detail the practice of identifying, testing and installing software updates or patches to address vulnerabilities while protecting system security.
+backup Backup and recovery policies provide guidelines for routine data backup, storage, and restoration in case of data loss or system malfunction.
+
+Incident response procedures outline a series of actions to take in case of security incidents, including initial assessment, containment measures, evidence collection processes and communication protocols
+Change management procedures specify a process to review, test, and implement modifications to IT infrastructure while mitigating security risks and maintaining stability of operations.
+
+
+####cybersecurity best practice :
+
+a) Strong Passwords: 
+
+Create strong passwords that incorporate letters, numbers, and special characters - multi-factor authentication can further ensure security for each account.
+
+b) Regular Software Updates:
+
+Make sure that operating systems, applications and security software remain up-to-date with patches to address vulnerabilities as quickly as possible.
+
+
+c) Phishing Awareness:
+
+Be wary of suspicious emails, messages or links and refrain from providing personal data or clicking unfamiliar or suspicious links.
+
+d) Data Encryption:
+
+Encrypt sensitive data both during transmission and storage to protect it against unintended access by others.
+
+e) Firewall and Antivirus Software:
+
+Install and update firewall and antivirus software regularly in order to identify and stop suspicious activities or software.
+
+

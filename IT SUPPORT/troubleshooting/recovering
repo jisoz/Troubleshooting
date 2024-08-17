@@ -1,0 +1,163 @@
+ # Reset This PC  
+"Reset this PC" allows you to reset your computer to its original state while offering different options to keep or remove personal files. It is useful for:
+
+## usecases
+1. Fixing Persistent Issues:
+
+If your computer is experiencing frequent crashes, slowdowns, or other issues that are not resolved by simpler troubleshooting methods, resetting your PC can help by returning the system to a fresh state.
+
+2. Removing Malware:
+
+A reset can remove persistent malware that might not be cleared by antivirus software, especially if you choose the option to remove everything.
+
+3. Preparing for Sale or Transfer:
+
+If you plan to sell or give away your computer, resetting it will remove your personal files, apps, and settings, ensuring the new owner receives a clean system.
+
+4. Starting Fresh Without Reinstalling Windows:
+
+If you want to start fresh with Windows but don’t want to go through the process of reinstalling the operating system from scratch, "Reset this PC" can reinstall Windows while keeping your files or wiping everything.
+
+## how to Access: 
+
+- Windows :
+from the Windows search bar:  
+go to reset my pc in the search bar  -> "Reset this PC" 
+
+while booting: 
+Turn on Your Computer:
+
+Start your computer normally.
+Interrupt the Boot Process:
+
+As soon as the Windows logo appears during boot, press and hold the power button to force your computer to shut down. Do this twice.
+On the third boot attempt, Windows will automatically enter the "Recovery Environment."
+Access Advanced Startup:
+
+Once in the Recovery Environment, you'll be presented with the option to "See advanced repair options."
+Select Troubleshoot > Advanced options to access the various Advanced Startup options.
+# Advanced Startup
+"Advanced Startup" provides more advanced recovery options and tools. It is useful for:
+ 
+ ## usecases
+ 1. Booting into Safe Mode:
+
+Safe Mode is a diagnostic mode that starts Windows with a minimal set of drivers and services. It’s useful for troubleshooting issues like driver problems or software conflicts.
+
+
+2. Accessing UEFI/BIOS Settings:
+
+You can enter your system's UEFI firmware settings (BIOS) directly from Advanced Startup. This is useful for changing boot order, enabling or disabling hardware features, or configuring other low-level settings.
+
+
+3. Using System Restore:
+
+System Restore can roll back your computer to a previous state, which is helpful if a recent change (like a driver update or software installation) is causing problems.
+
+4. Uninstalling Updates:
+
+If a recent Windows update is causing issues, you can use Advanced Startup to uninstall problematic updates.
+
+
+5. Command Prompt Access:
+
+The Command Prompt option in Advanced Startup allows you to run various commands for troubleshooting and repair, such as fixing boot issues or repairing system files.
+
+
+6. System Image Recovery:
+
+If you have created a system image, you can use Advanced Startup to restore your computer from that image, which is useful for completely restoring your system to a previous state.
+
+7. Startup Repair:
+
+This feature attempts to automatically fix issues that are preventing Windows from starting properly, such as corrupted system files or problematic drivers.
+
+## how to Access: 
+go to reset my pc in the search bar -> Advanced startup
+
+!Once you're in the Advanced Startup menu, you can access various troubleshooting tools:
+ -windows:
+ 1. for booting into safe mode :Choose Troubleshoot > Advanced options > Startup Settings.
+Click Restart.
+After your PC restarts, you'll see a list of options. Press 4 or F4 to start in Safe Mode. Press 5 or F5 for Safe Mode with Networking.
+
+2. Accessing UEFI/BIOS Settings:
+Choose Troubleshoot > Advanced options > UEFI Firmware Settings.
+Click "Restart," and your PC will boot into the UEFI/BIOS settings.
+
+3. Using System Restore:
+Choose Troubleshoot > Advanced options > System Restore.
+Follow the prompts to select a restore point and roll back your system.
+
+
+4. Uninstalling Updates:
+Choose Troubleshoot > Advanced options > Uninstall Updates.
+You can choose to uninstall the latest quality update or the latest feature update.
+
+5. Command Prompt Access:
+Choose Troubleshoot > Advanced options > Command Prompt.
+The Command Prompt will open, allowing you to run commands for troubleshooting.
+
+
+6. System Image Recovery:
+Choose Troubleshoot > Advanced options > System Image Recovery.
+Select the system image you've created and follow the prompts to restore your PC.
+
+
+7. Startup Repair:
+Choose Troubleshoot > Advanced options > Startup Repair.
+Windows will attempt to diagnose and fix startup issues.
+
+
+
+# Scenarios:
+
+1. Booting into Safe Mode
+Scenario: Your computer suddenly starts freezing after installing a new driver for your graphics card. Every time you try to log in, the screen goes black, and you can't access your desktop.
+
+Solution:
+
+Use Case: Boot into Safe Mode to troubleshoot the issue.
+Action: Restart your computer in Safe Mode to load Windows with a minimal set of drivers. Once in Safe Mode, you can uninstall the problematic graphics driver and revert to the previous version.
+2. Accessing UEFI/BIOS Settings
+Scenario: You’ve just bought a new solid-state drive (SSD) and want to install Windows on it, but the drive isn’t showing up during the installation process.
+
+Solution:
+
+Use Case: Access UEFI/BIOS settings to change the boot order or enable the SSD.
+Action: Restart your computer, go to UEFI Firmware Settings via Advanced Startup, and check if the SSD is detected. If necessary, change the boot order so that the SSD is the primary boot device, or enable any disabled ports.
+3. Using System Restore
+Scenario: After installing a new software application, your computer starts crashing frequently. The crashes happen even when you try to uninstall the software, and you're unsure what went wrong.
+
+Solution:
+
+Use Case: Use System Restore to revert your system to a stable state.
+Action: Access System Restore through Advanced Startup and select a restore point from before you installed the problematic software. Your system will roll back to that point, removing the software and any changes it made.
+4. Uninstalling Updates
+Scenario: After a recent Windows update, your computer becomes sluggish, and some of your programs stop working correctly. You suspect the update might be causing the issues.
+
+Solution:
+
+Use Case: Uninstall the recent Windows update to resolve the problem.
+Action: Use Advanced Startup to uninstall the latest update. This can help you return your system to its previous state before the update, potentially resolving the performance issues.
+5. Command Prompt Access
+Scenario: Your computer won’t boot into Windows, and you receive a "Boot Configuration Data (BCD) missing" error.
+
+Solution:
+
+Use Case: Use the Command Prompt to repair the boot configuration.
+Action: Boot into Advanced Startup, open Command Prompt, and run commands like bootrec /fixmbr and bootrec /rebuildbcd to repair the boot files and restore your system’s ability to boot.
+6. System Image Recovery
+Scenario: Your system is infected with malware that’s severely damaging your files and applications. Even after trying to clean it up, the system remains unstable and problematic.
+
+Solution:
+
+Use Case: Restore your system from a previously created system image to remove all traces of malware and return to a stable state.
+Action: If you have a system image backup, use Advanced Startup to initiate System Image Recovery. This will overwrite your current system with the backup, effectively removing the malware and restoring your system.
+7. Startup Repair
+Scenario: Your computer won’t boot up properly. It gets stuck on the Windows logo, and restarting the computer doesn't solve the issue.
+
+Solution:
+
+Use Case: Use Startup Repair to automatically diagnose and fix issues that prevent Windows from starting.
+Action: Use Advanced Startup to run Startup Repair. Windows will scan your system for startup issues and attempt to fix them automatically, allowing your system to boot properly again.

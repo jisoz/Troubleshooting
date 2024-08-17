@@ -1,0 +1,24 @@
+Introduction to Cloud Computing
+Cloud computing is a paradigm for providing computing resources over the internet, such as servers, storage units, databases and applications. Businesses can utilise cloud services instead of owning and maintaining physical infrastructure to gain access and utilise resources on demand
+
+
+
+Cloud computing offers various service models tailored specifically to individual user requirements. Here we explore three of these primary service models in greater depth:
+1. SaaS (Software as a Service)
+Description:
+
+SaaS provides users with access to software applications over the internet. These applications are hosted and managed by the service provider, so users don’t need to worry about installing, maintaining, or updating software on their local machines.
+Usage: Users simply access the software through a web browser or a dedicated application.
+
+2. PaaS (Platform as a Service)
+Description:
+
+PaaS provides a platform allowing customers to develop, run, and manage applications without dealing with the underlying infrastructure. It offers a framework to build and deploy applications.
+Usage: Developers use PaaS to build applications quickly and efficiently, leveraging the platform’s pre-configured environment.
+
+
+3. IaaS (Infrastructure as a Service)
+Description:
+
+IaaS provides virtualized computing resources over the internet. Users can rent virtual machines, storage, and networking components, which they can configure according to their needs.
+Usage: IaaS is typically used by IT administrators to create and manage virtual servers, storage, and networks.
