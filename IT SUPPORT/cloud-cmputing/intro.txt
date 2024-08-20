@@ -22,3 +22,101 @@ Description:
 
 IaaS provides virtualized computing resources over the internet. Users can rent virtual machines, storage, and networking components, which they can configure according to their needs.
 Usage: IaaS is typically used by IT administrators to create and manage virtual servers, storage, and networks.
+
+SaaS is a cloud computing service model where software applications are delivered over the internet, typically through a web browser, rather than being installed and run on individual computers. onedrive | google drive ...
+PaaS (Platform as a Service): Provides a platform that includes the underlying infrastructure and allows users to develop, run, and manage applications without the complexity of building and maintaining the infrastructure.  microsoft azure 
+IaaS (Infrastructure as a Service): Provides virtualized computing resources over the internet, giving users control over the infrastructure, such as servers, storage, and networking, allowing them to run their applications as they would on physical servers.  amazon instance ec2
+
+
+# cloud computing technologies:
+- virtualisation
+- service oriented architecture 
+- utility computing
+- grid computing
+
+
+
+Virtualization
+
+Explanation:
+Virtualization is the technology that allows multiple virtual instances of a server or computer to run on a single physical machine. Each virtual instance, known as a virtual machine (VM), operates as if it's an independent system, with its own operating system and applications.
+Real-World Example:
+Imagine a company that needs multiple servers to run different applications (e.g., a database server, a web server, and an email server). Instead of purchasing three separate physical servers, the company can use virtualization to run three VMs on a single physical server. Each VM would behave like its own server, but they all share the physical hardware, reducing costs and increasing efficiency.
+Service-Oriented Architecture (SOA)
+
+Explanation:
+SOA is a design pattern where different services (self-contained units of functionality) communicate with each other over a network to form applications. Each service performs a specific task, and these services can be reused across multiple applications.
+Real-World Example:
+Consider an e-commerce platform like Amazon. The platform is built using various services, such as a payment service, a product catalog service, and a user authentication service. Each service operates independently but communicates with others to provide the complete functionality of the e-commerce platform. If a new application (e.g., a mobile app) is developed, it can reuse these existing services, speeding up development.
+Utility Computing
+
+Explanation:
+Utility computing is a model where computing resources (like processing power, storage, and bandwidth) are provided to users on demand, and they are billed based on their actual usage, much like utilities such as electricity or water.
+Real-World Example:
+Cloud services like Amazon Web Services (AWS) or Microsoft Azure provide utility computing. If a startup needs a server to host its application, instead of buying and maintaining physical servers, it can rent the required computing resources from AWS. The startup only pays for what it uses, making it cost-effective, especially when demand fluctuates.
+Grid Computing
+
+Explanation:
+Grid computing involves connecting multiple computers to work together as a single system to solve large-scale computing problems. The computers in the grid share their resources (processing power, storage) to perform complex tasks.
+Real-World Example:
+One famous example of grid computing is the SETI@home project, where volunteers from around the world allowed their computers to be part of a grid to analyze radio signals from space in search of extraterrestrial intelligence. By using the combined power of thousands of personal computers, the project could process data much faster than any single machine could.
+
+
+
+# Inffrastructure:
+hpervisor
+management of software 
+deployment of software
+network 
+server
+storage
+
+# cloud models:
+ public model : allow access to general public
+ private model : used within an organisation
+ hybrid model : 
+ community cloud model: 
+
+
+Public Cloud Model
+
+Explanation:
+A public cloud is a cloud computing environment where services and infrastructure are provided to multiple customers over the internet. These services are owned and operated by third-party cloud service providers (e.g., Amazon Web Services, Microsoft Azure, Google Cloud), and the infrastructure is shared among many users.
+Example:
+Netflix: Netflix uses Amazon Web Services (AWS) to deliver its streaming service to millions of users worldwide. AWS provides the infrastructure and services that Netflix needs, such as storage, processing power, and content delivery networks (CDNs), without Netflix needing to own or manage the physical servers.
+
+
+
+
+
+Private Cloud Model
+
+Explanation:
+A private cloud is a cloud environment that is exclusively used by one organization. It can be hosted on-premises (within the organization's own data centers) or by a third-party service provider, but the resources are dedicated to a single organization and are not shared with others.
+Example:
+Government Agencies: Many government agencies use private clouds to ensure that sensitive data, such as personal information and national security details, are kept secure. The U.S. Department of Defense, for example, uses a private cloud to manage its data and applications, ensuring that it meets strict security and compliance requirements.
+
+
+
+Hybrid Cloud Model
+
+Explanation:
+A hybrid cloud combines elements of both public and private clouds, allowing data and applications to be shared between them. This model provides flexibility, allowing organizations to run sensitive workloads in a private cloud while using the public cloud for less-sensitive tasks or for additional capacity.
+Example:
+Healthcare Providers: A hospital might use a private cloud to store sensitive patient information in compliance with healthcare regulations, while also using a public cloud to run its customer-facing applications, like a patient portal. The two environments can be integrated, allowing data to flow securely between the private and public clouds.
+
+
+
+
+Community Cloud Model
+
+Explanation:
+A community cloud is a cloud environment that is shared by multiple organizations with similar needs or concerns, such as security, compliance, or mission. The infrastructure is jointly used and managed by the participating organizations, and it can be hosted either on-premises or by a third-party provider.
+Example:
+Educational Institutions: Several universities or research institutions might pool their resources to create a community cloud for sharing research data and collaboration tools. This setup allows them to share infrastructure costs while maintaining control over their shared environment, which might be necessary for handling sensitive academic research data.
+
+
+
+
+
+

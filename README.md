@@ -618,5 +618,25 @@ An operating system (OS) is a computer software program that organises computer 
 
 7- security: Operating systems provide various protection measures designed to keep computers free from unapproved access, malware and viruses as well as possible threats, including authentication mechanisms for users as well as access control policies and firewall security measures.
 
+# FILE SYSTEM 
+File systems are crucial for organizing and managing files on storage devices. 
+Ntfs the best 
+1. NTFS (New Technology File System)
+Overview:
+
+Developed by Microsoft for Windows operating systems.
+Provides advanced features compared to older file systems like FAT32.
+Features:
+
+File Permissions and Security: NTFS supports detailed permissions, encryption, and audit logging.
+Compression: It allows files and folders to be compressed to save disk space.
+Disk Quotas: Administrators can set disk space limits for users.
+File System Journaling: NTFS uses a journal to keep track of changes to the file system, which helps prevent corruption.
+Large File Support: Handles large files and volumes (up to 256 TB).
+Real-World Example:
+
+Enterprise Environments: NTFS is commonly used in corporate environments for its security features and support for large volumes. For instance, a company’s server might use NTFS to manage employee files, ensuring data security and efficient storage management.
+
+
 
 

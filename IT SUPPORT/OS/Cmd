@@ -1,0 +1,14 @@
+windows cmd to use:
+
+1. help 
+2. diskpart
+   - To view all disks connected to your system: list disk  
+3. dir
+4. cd 
+5. hostname => to know the hostname of the computer
+6. findstr /s /i /m "<img src=\"assets/images/settings-page/business-and-trade.svg\"" *.*
+Here’s what each option means:
+/s searches all subdirectories.
+/i makes the search case-insensitive.
+/m prints only the names of files that contain the search string.
+   
