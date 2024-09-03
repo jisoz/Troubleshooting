@@ -28,6 +28,15 @@ PaaS (Platform as a Service): Provides a platform that includes the underlying i
 IaaS (Infrastructure as a Service): Provides virtualized computing resources over the internet, giving users control over the infrastructure, such as servers, storage, and networking, allowing them to run their applications as they would on physical servers.  amazon instance ec2
 
 
+4.Database as service (DBaas):
+
+Database as a Service (DBaaS) is a cloud computing service model that provides users with access to database management systems over the internet. It eliminates the need for physical hardware and software management, offering scalability, reliability, and ease of use
+
+5. Communication as a service (CaaS):
+Communication as a Service (CaaS) refers to cloud-based services that provide various communication functionalities, including messaging, voice, video, and collaboration tools.
+
+
+
 # cloud computing technologies:
 - virtualisation
 - service oriented architecture 
@@ -115,8 +124,4 @@ A community cloud is a cloud environment that is shared by multiple organization
 Example:
 Educational Institutions: Several universities or research institutions might pool their resources to create a community cloud for sharing research data and collaboration tools. This setup allows them to share infrastructure costs while maintaining control over their shared environment, which might be necessary for handling sensitive academic research data.
 
-
-
-
-
-
+# go to Azure microsoft learn to practice (github : Microsoft) private

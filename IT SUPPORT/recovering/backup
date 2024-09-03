@@ -1,0 +1,19 @@
+backup types:
+- full 
+- incremental
+- Differential 
+
+
+
+1. Full Backup
+A Full Backup is a complete backup of your entire database. It includes all the data, the database's structure, and the necessary metadata.
+
+2. differential Backup
+A Differential Backup captures only the data that has changed since the last full backup. It is smaller and faster than a full backup, but it depends on the last full backup to restore the database.
+
+3. An Incremental Backup captures only the data that has changed since the last backup of any type (full, differential, or incremental). This type of backup is even smaller and faster than differential backups but requires all previous backups (full, differential, and incremental) to restore the database.
+
+Example Strategy:
+Sunday: Full Backup.
+Monday - Saturday: Differential backups each night.
+Hourly: Incremental backups during business hours.

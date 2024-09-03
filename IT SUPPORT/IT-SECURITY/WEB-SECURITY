@@ -1,0 +1,56 @@
+# HTTP
+HTTP (hypertext transfer protocol)   which is the foundation of data communication on the web.
+
+How to use:
+
+You can send a basic HTTP GET request like this:
+curl http://example.com
+
+To send a POST request with data:
+
+curl -X POST -d "param1=value1&param2=value2" http://example.com
+
+### security vulnerabilities 
+
+# slow loris Attack 
+A Slowloris attack is a type of denial-of-service (DoS) attack that targets web servers by opening numerous connections to the server and keeping them open for as long as possible. The attack works by sending partial HTTP requests to the server, and then it continues to send subsequent headers at regular intervals to keep these connections alive. As a result, the server is unable to close the connections or accept new ones, eventually exhausting its resources and rendering the service unavailable to legitimate users.
+
+
+
+1. to test : 
+   git clone https://github.com/gkbrk/slowloris
+   cd slowloris
+   python slowloris.py jadissalexzur.dev.local -s 1000 -v    (iis good    | need to test for apache !important)
+
+2. to prevent:
+Limiting Maximum Number of Connections per IP:
+
+Configure the server to limit the number of simultaneous connections allowed from a single IP address.
+Example: In Apache, use the mod_reqtimeout module to set timeouts for receiving the full request headers.
+<IfModule mod_reqtimeout.c>
+   RequestReadTimeout header=20-40,MinRate=500
+   RequestReadTimeout body=10,MinRate=500
+</IfModule>
+
+
+#  Cross-Site Scripting (XSS)
+Description: Injects malicious scripts into webpages viewed by other users.
+Impact: Can steal cookies, session tokens, or other sensitive information.
+Prevention: Sanitize and validate input, use Content Security Policy (CSP)   
+1. to test in any input put <script> alert("hacked") </script>   if worked unsafe and need to enable csp protection
+
+
+
+# SQL Injection (SQLi)
+Description: Injects malicious SQL queries into input fields, manipulating the database.
+Impact: Unauthorized access or manipulation of the database.
+Prevention: Use parameterized queries or prepared statements, sanitize inputs. 
+1. to test : username :' OR '1'='1    password "" (empty) in login if  no working so safe but if access unsafe 
+
+
+
+#  Remote File Inclusion (RFI) and Local File Inclusion (LFI)
+Remote File Inclusion (RFI) and Local File Inclusion (LFI) are vulnerabilities that allow an attacker to include files from a remote server or the local file system in a web application. This can lead to the execution of malicious code or unauthorized access to sensitive information.
+
+
+# 

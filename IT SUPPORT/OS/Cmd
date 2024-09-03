@@ -12,3 +12,27 @@ Here’s what each option means:
 /i makes the search case-insensitive.
 /m prints only the names of files that contain the search string.
    
+
+
+7. nslookup Dubaipolice.com
+Server:  DPF-DC5.Dubaipolice.com
+Address:  10.0.2.142
+
+Name:    Dubaipolice.com
+Addresses:  10.100.2.91
+          10.12.115.142
+          10.0.2.93
+          10.0.2.143
+          10.0.2.142
+          10.0.2.144
+          10.0.2.91
+          10.12.108.142
+          10.19.114.142
+          10.100.2.92
+          10.12.146.142
+          10.13.137.142
+          10.0.2.92
+
+
+
+-              
