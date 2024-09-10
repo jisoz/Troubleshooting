@@ -125,3 +125,9 @@ Example:
 Educational Institutions: Several universities or research institutions might pool their resources to create a community cloud for sharing research data and collaboration tools. This setup allows them to share infrastructure costs while maintaining control over their shared environment, which might be necessary for handling sensitive academic research data.
 
 # go to Azure microsoft learn to practice (github : Microsoft) private
+
+
+
+
+
+

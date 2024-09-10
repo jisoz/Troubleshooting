@@ -1,0 +1,19 @@
+# virtualisation in the cloud
+
+hypervisor : piece of hardware or software that creates and run vm machine 
+ - allow multiple os to run on a single machine
+ - refered as host computer and vm are guest 
+ - responsible for managing resources for guest OS
+ - 2 types:  type 1 hypervisor created and deployed on a bare metal installation             
+             act as a os for a bare metal machine 
+             communicate directly with hardware and boots befor os 
+
+             type2 hypervisor loaded on top of an already existing os installation
+                             relies o the os 
+
+
+
+
+# creating and configuring vm
+
+

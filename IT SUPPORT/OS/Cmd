@@ -35,4 +35,4 @@ Addresses:  10.100.2.91
 
 
 
--              
+- Remove-Item -Recurse -Force .git              
