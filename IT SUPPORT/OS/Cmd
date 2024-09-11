@@ -5,6 +5,7 @@ windows cmd to use:
    - To view all disks connected to your system: list disk  
 3. dir
 4. cd 
+
 5. hostname => to know the hostname of the computer
 6. findstr /s /i /m "<img src=\"assets/images/settings-page/business-and-trade.svg\"" *.*
 Here’s what each option means:
@@ -36,3 +37,60 @@ Addresses:  10.100.2.91
 
 
 - Remove-Item -Recurse -Force .git              
+
+
+
+
+
+
+
+
+
+
+- ipconfig  (Displays all current TCP/IP network configurations.)
+
+ex: output Ethernet adapter vEthernet (Default Switch):
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::d7d4:a083:31ef:b12b%46
+   IPv4 Address. . . . . . . . . . . : 172.19.64.1
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . :
+
+Ethernet adapter VirtualBox Host-Only Network:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::32de:9174:4bfa:b54b%20
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::fc65:5644:8873:b2d8%10
+   IPv4 Address. . . . . . . . . . . : 10.255.32.116
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 10.255.0.1
+
+
+explaination :
+
+# Ethernet Adapter vEthernet (Default Switch):
+ This adapter refers to a virtual network interface created by Hyper-V, which is a virtualization feature in Windows. The "Default Switch" allows virtual machines (VMs) to communicate with the external network using the host's network connection.
+
+IPv4 Address: 172.19.64.1
+
+Explanation: This is a private IPv4 address used for communication between virtual machines (VMs) and the host system. The address is in the private 172.16.x.x to 172.31.x.x range, reserved for local networks.
+Subnet Mask: 255.255.240.0
+
+Explanation: The subnet mask determines which part of the IP address refers to the network and which part refers to devices (hosts). In this case, the subnet mask indicates that the first 20 bits of the IP address are used for the network, meaning the network can accommodate many devices.
+
+#  Ethernet Adapter VirtualBox Host-Only Network:
+
+This adapter is created by VirtualBox, another virtualization software, and is used for virtual machines to communicate with the host system without accessing the external network.
+
+#  Wireless LAN Adapter Wi-Fi:
+This is your primary wireless network adapter, which connects your computer to the internet via a Wi-Fi network.
+Default Gateway: 10.255.0.1
+
+Explanation: This is the IP address of your Wi-Fi router, which serves as the gateway to external networks, including the internet.

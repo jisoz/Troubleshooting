@@ -1,0 +1,84 @@
+ 
+ # DNS
+ 
+ 1. View DNS Configuration:
+    to know my dns server i am using 
+  -  cmd =>
+ 
+ipconfig /all
+Look for the "DNS Servers" entry under your active network adapter (e.g., Ethernet adapter or Wi-Fi adapter). The DNS server addresses will be listed here.
+
+ - linux=> ip addr show
+
+
+1. Clear DNS Cache:
+   
+ When you access a website, your computer uses a cached DNS entry to resolve the website’s domain name to its IP address. If the website’s IP address changes, and your system is still using the old DNS information, it won’t connect to the correct server. This is where clearing the DNS cache can help.
+
+
+ - cmd => ipconfig /flushdns
+   linux => systemd-resolved is a DNS service used on many modern Linux distributions, including Ubuntu.
+             dnsmasq is used on some lightweight or custom Linux systems for DNS caching.
+             BIND is often used as a DNS server on enterprise or server systems.
+             nscd is sometimes used to cache DNS queries.
+             Unbound is another DNS resolver used in some systems.
+
+             for systemd-resolved => sudo systemd-resolve --flush-caches
+             for dnsmasq  =>sudo systemctl restart dnsmasq
+             for BIND => sudo rndc flush
+             FOR NSCD => sudo systemctl restart nscd
+
+- linux =>
+
+
+   3. Release and Renew IP Address:
+   
+   Your laptop is connected to a Wi-Fi network at home. You notice that while you can browse some websites, others are taking too long to load or failing to connect altogether. You've tried restarting your web browser and clearing its cache, but the issue persists.
+
+To troubleshoot:
+
+- cmd =>
+Release the IP Address:
+ipconfig /release
+This disconnects your laptop from the current IP address and the network.
+Renew the IP Address:
+cmd
+Copy code
+ipconfig /renew
+This command requests a new IP address from your router or DHCP server. Your laptop reconnects to the network with a new IP address.
+After performing these steps, check if the connectivity issues have been resolved. If not, further troubleshooting might be required, such as checking your router’s settings or examining other network configurations.             
+
+- linux => 
+  
+
+
+4.  nslookup Commands
+   . nslookup example.com => Resolves the domain name example.com to its IP .  This command uses your system's default DNS server to resolve the domain name example.com to its IP address.
+   . nslookup example.com 8.8.8.8 => Uses Google's DNS server (8.8.8.8) to resolve example.com. This command specifically queries Google's Public DNS server (8.8.8.8) to resolve the domain name example.com
+   . nslookup -type=recordtype example.com => Replace recordtype with types such as A, MX, CNAME, TXT, etc., to view specific DNS records.
+
+
+5. Trace Route to Domain:
+tracert example.com
+
+linux=> traceroute
+
+
+
+
+
+# netstat
+Usage:
+
+netstat — Displays active network connections and listening ports.
+netstat -a — Shows all connections and listening ports.
+netstat -n — Displays addresses and port numbers in numerical form.
+netstat -r — Displays the routing table.
+netstat -s — Shows network statistics by protocol.
+
+
+ cmd =>netstat -an | findstr :3306
+
+powershell => Get-NetTCPConnection -LocalPort 80
+
+   
