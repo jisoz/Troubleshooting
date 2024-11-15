@@ -1,0 +1,8 @@
+Active Directory has been used to centrally manage networks of computers 
+
+OU Organizational Unit -> folder or directory for organizing objects within a centralized managment system
+
+https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc977985(v=technet.10)
+
+SAM Security account manager is a database in windows that store usernames and passwords
+
