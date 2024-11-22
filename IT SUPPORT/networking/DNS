@@ -139,4 +139,81 @@ ex :  A  | EXAMPLE.COM | 234.245.267.1 | 7200
    
 - CName : resolve domain or subdomain to another domain name
           A  |www.EXAMPLE.COM |  EXAMPLE.COM| 7200 
+
+
+
+
+
+
+
+
+
+
+
+
+Step 1: Domain Registration (Registrar Level)
+Registrar: When you register a domain (e.g., mywebsite.com) through a registrar like Namecheap:
+The registrar records your domain in a Registry (a centralized database for the TLD).
+The Registry is managed by the organization responsible for that TLD. For example:
+.com is managed by Verisign.
+.org is managed by Public Interest Registry (PIR).
+The Registry associates your domain with the nameservers you specify (default or custom).
+Example:
+You specify two nameservers during registration (e.g., from Cloudflare):
+
+Copy code
+ns1.cloudflare.com
+ns2.cloudflare.com
+These are your Authoritative Nameservers. The registrar sends this information to the TLD registry.
+
+Step 2: Registry Level
+The TLD Registry (e.g., .com) holds a list of all registered domains under that TLD and their associated nameservers.
+
+When a query is made for your domain (mywebsite.com):
+
+The Root DNS Server checks with the TLD Nameserver (e.g., .com).
+The TLD nameserver points the query to the Authoritative Nameservers (ns1.cloudflare.com and ns2.cloudflare.com).
+The Registry itself does not store your DNS records (like A, MX, CNAME). It only keeps the nameservers for your domain.
+
+Step 3: Nameserver Level (DNS Hosting Provider)
+The actual DNS records (A, CNAME, MX, TXT, etc.) for your domain are stored in the Authoritative Nameservers. These are managed by your DNS Hosting Provider (e.g., Cloudflare, AWS Route 53, or Namecheap itself if you use their DNS).
+
+If you set ns1.cloudflare.com and ns2.cloudflare.com:
+Cloudflare becomes the authoritative server for your domain.
+You log into your Cloudflare account and configure the DNS records (e.g., A, CNAME).
+How DNS Resolves (Step by Step)
+When someone tries to access www.mywebsite.com, here's how the system works:
+
+Browser Makes a DNS Query:
+
+The browser asks, “What is the IP address of www.mywebsite.com?”
+Recursive Resolver (ISP or Public DNS):
+
+The recursive resolver queries the Root Nameserver.
+Root nameservers know where .com nameservers are.
+TLD Nameserver:
+
+The .com nameserver checks its database and finds your Authoritative Nameservers (e.g., ns1.cloudflare.com).
+Authoritative Nameserver:
+
+The resolver queries ns1.cloudflare.com.
+The authoritative server responds with the actual DNS record:
+Example: A Record → www.mywebsite.com -> 192.0.2.1.
+Response to the Browser:
+
+The recursive resolver caches the response and returns the IP to the browser.
+The browser connects to 192.0.2.1, and the website loads.
+Where Are the DNS Records Stored?
+Registrar:
+
+Stores the domain name and the nameservers you set.
+Does NOT store DNS records (like A or MX).
+Registry:
+
+Stores a reference to the nameservers for your domain.
+Does NOT store your DNS records.
+Authoritative Nameservers:
+
+These servers (e.g., Cloudflare, AWS Route 53) store and manage all DNS records (A, CNAME, MX, etc.).
+When the DNS is queried, these servers provide the final response.
     
